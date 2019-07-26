@@ -5,6 +5,6 @@ describe('My first cypress test', () => {
   it('translate word we erase and write again ', () => {
     cy.get('#source').type('Hola');
     cy.get('.clear > .jfk-button-img').click();
-    cy.get('#source').type('Hola world');
+    cy.get('#source').type('vamos');
   });
 });
