@@ -6,5 +6,8 @@ describe('My first cypress test', () => {
     cy.get('#source').type('Hola');
     cy.get('.clear > .jfk-button-img').click();
     cy.get('#source').type('vamos');
+    cy.get('.tlid-translation > span')
+      .should('have.text', 'come on')
+      .and('be.visible');
   });
 });
