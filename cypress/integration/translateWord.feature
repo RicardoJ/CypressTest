@@ -6,4 +6,4 @@ Feature: The Google translate
     Scenario: Translate word
         Given I open Google translate
         When I write "Hola" and clean text after write again
-        Then I see "hello" in the translation box
+        Then I see "Hello" in the translation box
